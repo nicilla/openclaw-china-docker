@@ -6,20 +6,20 @@
 
 > 💡 **AI 助手提示**：克隆本项目并准备好渠道机器人与 AI API 信息填入 `.env.example` 文件中，在 AI CLI（如 Claude Code/Gemini CLI）中输入：`请参考 .env.example，quick-start.md 和 docker-compose.yml 帮我完成本项目的部署与环境配置`。
 
-<table align="center">
+<table align="center" width="100%">
   <thead>
     <tr>
-      <th align="center">镜像下载量超100k</th>
-      <th align="center">好用给个赞助吧</th>
+      <th align="center" width="66%">镜像下载量超100k</th>
+      <th align="center" width="34%">好用给个赞助吧</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td align="center" valign="middle">
-        <img src="https://docker-card.justlikemaki.workers.dev/justlikemaki/openclaw-docker-cn-im?layout=compact&theme=github" alt="openclaw-docker-cn-im" style="width: 100%; max-width: 520px; height: 320px; object-fit: contain;" />
+        <img src="https://docker-card.justlikemaki.workers.dev/justlikemaki/openclaw-docker-cn-im?layout=compact&theme=github" alt="openclaw-docker-cn-im" style="width: 100%; height: 320px; object-fit: contain;" />
       </td>
       <td align="center" valign="middle">
-        <img src="sponsor.png" alt="微信赞赏码" style="width: 100%; max-width: 260px; height: 320px; object-fit: cover; object-position: center;" />
+        <img src="sponsor.png" alt="微信赞赏码" style="width: 100%; height: 320px; object-fit: cover; object-position: center;" />
       </td>
     </tr>
   </tbody>
