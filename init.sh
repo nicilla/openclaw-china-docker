@@ -2163,6 +2163,12 @@ EOF
 }
 
 install_agent_reach() {
+    # 无论是否启用，只要目录不存在就初始化虚拟环境，确保路径可用并支持用户手动操作
+    if ! gosu node test -d "$AGENT_REACH_VENV_HOME"; then
+        log_section "初始化 Agent Reach 虚拟环境"
+        gosu node python3 -m venv "$AGENT_REACH_VENV_HOME"
+    fi
+
     if [ "${AGENT_REACH_ENABLED:-false}" != "true" ]; then
         return
     fi
@@ -2206,7 +2212,6 @@ install_agent_reach() {
         gosu node bash -c "
             export PATH=\$PATH:/home/node/.local/bin
             $pip_index_env
-            python3 -m venv ~/.agent-reach-venv
             source ~/.agent-reach-venv/bin/activate
             pip install --upgrade pip $pip_mirror
             pip install $github_url $pip_mirror
